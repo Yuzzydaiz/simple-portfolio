@@ -175,3 +175,17 @@
           navMenu.classList.remove("show-sidebar");
         });
       }
+      
+ sendEmail = () => {
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "yusufayomide267@gmail.com",
+      Password : "yusuf@267",
+      To : 'yusufayomide267@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "This is the subject",
+      Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+ }     

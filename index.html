@@ -27,7 +27,7 @@
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav-logo">
-          <a href="#" class="nav-logo-text">M</a>
+          <a href="#" class="nav-logo-text">Y</a>
         </div>
 
         <div class="nav-menu">
@@ -455,27 +455,26 @@
         <div class="work-container container grid">
           <div class="work-card mix web">
             <img
-              src="https://i.postimg.cc/43Th5VXJ/work-1.png"
+              src="./assets/beatbox-front-img.png"
               alt=""
               class="work-img"
             />
-            <h3 class="work-title">Web Design</h3>
+            <h3 class="work-title">Web Development</h3>
             <span class="work-button"
               >Demo<i class="uil uil-arrow-right work-button-icon"></i
             ></span>
 
             <div class="portfolio-item-details">
-              <h3 class="details-title">The services we provide for design</h3>
+              <h3 class="details-title">BeatBox</h3>
               <p class="details-description">
-                Two smartphones displaying a sleek, dark-themed dashboard
-                interface
+                Beatbox is a simple music player app designed for music lovers. It fetches and displays music from an API, letting you explore and enjoy tracks easily. Fast, clean, and easy to use — just press play and vibe.
               </p>
               <ul class="details-info">
-                <li>Created - <span>22 Apr 2025</span></li>
-                <li>Technologies - <span>html css</span></li>
-                <li>Role - <span>frontend</span></li>
+                <li>Created - <span>22 April 2025</span></li>
+                <li>Technologies - <span>html css & Javascript</span></li>
+                <li>Role - <span>Frontend</span></li>
                 <li>
-                  View - <span><a href="#">www.domain.com</a></span>
+                  View - <span><a href="https://yuzzydaiz.github.io/BeatBox/">www.beatbox.com</a></span>
                 </li>
               </ul>
             </div>
@@ -689,7 +688,7 @@
               <div class="services-modal-content">
                 <i class="uil uil-times services-modal-close"></i>
 
-                <h3 class="services-modal-title">Web Designer</h3>
+                <h3 class="services-modal-title">Academic Tutor</h3>
                 <p class="services-modal-description">
                   I offer services with more than 3 years of experience with
                   quality work to clients and companies
@@ -748,7 +747,7 @@
               <div class="services-modal-content">
                 <i class="uil uil-times services-modal-close"></i>
 
-                <h3 class="services-modal-title">UI/UX Designer</h3>
+                <h3 class="services-modal-title">Software Developer</h3>
                 <p class="services-modal-description">
                   I offer services with more than 5 years of experience with
                   quality work to clients and companies
@@ -811,7 +810,7 @@
               <div class="services-modal-content">
                 <i class="uil uil-times services-modal-close"></i>
 
-                <h3 class="services-modal-title">Branding Designer</h3>
+                <h3 class="services-modal-title">Research Writer</h3>
                 <p class="services-modal-description">
                   I offer services with more than 2 years of experience with
                   quality work to clients and companies
@@ -959,7 +958,7 @@
                 <i class="uil uil-envelope-edit contact-card-icon"></i>
                 <h3 class="contact-card-title">Email</h3>
                 <span class="contact-card-data">yusufayomide267@gmail.com</span>
-                <a href="https://mailto:yusufayomide267@gmail.com">
+                <a href="mailto:yusufayomide267@gmail.com">
                 <span class="contact-button"
                   >Mail me
                   <i class="uil uil-arrow-right contact-button-icon"></i
@@ -984,7 +983,7 @@
           </div>
 
           <div class="contact-content">
-            <form action="" class="contact-form">
+            <form action="" class="contact-form" onsubmit="sendEmail(); reset(); return false" >
               <div class="input-container">
                 <input type="text" class="input" />
                 <label for="">Username</label>
@@ -1009,7 +1008,7 @@
                 <span>Message</span>
               </div>
 
-              <button type="submit" class="button">
+              <button type="submit" class="button" onclick="sendEmail()">
                 <i class="uil uil-navigator button-icon"></i>Send Message
               </button>
             </form>
@@ -1072,5 +1071,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
       </body>
 </html>
